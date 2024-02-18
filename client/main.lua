@@ -21,7 +21,7 @@ local function CreateDutyBlips(playerId, playerLabel, playerJob, playerLocation)
         ShowHeadingIndicatorOnBlip(blip, true)
         SetBlipRotation(blip, math.ceil(playerLocation.w))
         SetBlipScale(blip, 1.0)
-        if playerJob == "police" then
+        if playerJob == "police" and playerJob == "ambulance" then
             SetBlipColour(blip, 38)
         else
             SetBlipColour(blip, 5)
